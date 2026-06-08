@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my_server"
+version = "0.1.0"
+description = "CLI tools for the MyProject WebDAV server"
+requires-python = ">=3.12"
+dependencies = [
+    "webdavclient3",
+    "pyyaml",
+]
+
+[project.scripts]
+example_ls              = "my_server.scripts.example_ls:main"
+example_upload          = "my_server.scripts.example_upload:main"
+example_get             = "my_server.scripts.example_get:main"
+example_mv              = "my_server.scripts.example_mv:main"
+example_rm              = "my_server.scripts.example_rm:main"
+example_restore         = "my_server.scripts.example_restore:main"
+example_mkdir           = "my_server.scripts.example_mkdir:main"
+example_manage_project  = "my_server.scripts.example_manage_project:main"
+example_server          = "my_server.scripts.example_server:main"

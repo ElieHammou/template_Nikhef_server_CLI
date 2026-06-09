@@ -3,7 +3,7 @@
 Server Tutorial
 ===============
 
-This tutorial covers all the commands available in the FASER Server CLI.
+This tutorial covers all the commands available in the example Server CLI.
 
 Resources are organised into three types: ``events``, ``analyses``, and ``misc``.
 Two servers are available: ``public`` and ``private``.

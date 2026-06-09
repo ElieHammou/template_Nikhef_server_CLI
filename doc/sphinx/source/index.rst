@@ -1,7 +1,7 @@
-FASER Nikhef documentation
+example Nikhef documentation
 ==========================
 
-The FASER Server CLI provides command-line tools for uploading, downloading, and managing resources on FASER WebDAV servers.
+The example Server CLI provides command-line tools for uploading, downloading, and managing resources on example WebDAV servers.
 
 Resources are organized into types (`events`, `analyses`, `misc`), with support for projects, a searchable registry, and a bin for soft-deleted files.
 

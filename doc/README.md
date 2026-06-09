@@ -1,6 +1,6 @@
-# FASER Server Documentation
+# example Server Documentation
 
-This directory contains the Sphinx-based documentation for the FASER Server CLI.
+This directory contains the Sphinx-based documentation for the example Server CLI.
 
 ## Structure
 
@@ -20,17 +20,20 @@ doc/
 ## Regenerating the Documentation
 
 1. **Install dependencies** (from repository root):
+
    ```bash
    pip install -e ".[docs]"
    ```
 
 2. **Build the HTML documentation**:
+
    ```bash
    cd doc/sphinx
    make html
    ```
 
 3. **View the documentation**:
+
    ```bash
    # On macOS
    open build/html/index.html
@@ -43,6 +46,7 @@ doc/
    ```
 
 4. **Clean build artifacts**:
+
    ```bash
    make clean
    ```
@@ -52,11 +56,13 @@ doc/
 ### Adding a New Section
 
 1. Create a new directory under `doc/sphinx/source/` for your section:
+
    ```bash
    mkdir -p doc/sphinx/source/new_section
    ```
 
 2. Create an `index.rst` file in your new directory:
+
    ```rst
    .. _new_section:
 
@@ -75,6 +81,7 @@ doc/
 3. Add your content files (e.g., `page1.rst`, `page2.rst`) in the same directory.
 
 4. Reference your new section from the main `index.rst`:
+
    ```rst
    Contents
    ========
@@ -89,11 +96,13 @@ doc/
 ### Adding a New Tutorial
 
 1. Add a new `.rst` file in the appropriate section directory (e.g., `doc/sphinx/source/server/`):
+
    ```bash
    touch doc/sphinx/source/server/my_new_tutorial.rst
    ```
 
 2. Add content to your tutorial file. Use reStructuredText syntax:
+
    ```rst
    .. _my-new-tutorial:
 
@@ -113,6 +122,7 @@ doc/
    ```
 
 3. Add your tutorial to the section's `index.rst`:
+
    ```rst
    .. toctree::
       :maxdepth: 2
